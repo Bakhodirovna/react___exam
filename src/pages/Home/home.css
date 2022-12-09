@@ -1,0 +1,18 @@
+.cosmetics__box {
+  width: 1260px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.cosmetics__box .cosmetics__images {
+  margin: 10px 0;
+  display: grid;
+  grid-template: 263px 263px/400px 400px 400px;
+  grid-gap: 10px;
+  position: relative;
+}
+.cosmetics__box .cosmetics__images .img2 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}/*# sourceMappingURL=home.css.map */

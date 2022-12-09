@@ -1,0 +1,56 @@
+.navbar{
+    display: flex;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index:999 ;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 0 auto;
+    width: 1260px;
+    &__box{
+      padding: 0 20px;
+      width: 1260px;
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__logo{
+      text-decoration: none;
+      font-family: 'Gill Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+      color: #101010;      
+    }
+    &__links{
+      display: flex;
+    }
+    &__link{
+        margin-left: 35px;
+        text-decoration: none;
+        position: relative;
+      }
+    &__bag{
+      display: flex;
+      align-items: center;
+    }
+    .bag__quantity{
+      bottom: 10px;
+      left: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 17px;
+      width: 17px;
+      font-size: 13px;
+      padding: 1px;
+      background-color: #FFA542;
+      color: white;
+      border-radius: 50%;
+      text-decoration: none;
+      position: absolute;
+    }  
+}

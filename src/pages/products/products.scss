@@ -1,0 +1,104 @@
+.product{
+    &__title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 24px;
+        color: #838383;
+    }
+    &__items{
+        width: 1260px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item{ 
+        padding: 15px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 380px;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.3);
+            .product__btn{
+                display: flex;
+            }
+        }
+    }
+    &__img{
+        margin-top: 20px;
+        width: 219px;
+        height: 237px;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__name{
+        font-family: 'Gill Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        color: #1C1C27;   
+        text-align: left;     
+    }
+    &__brand{
+        margin:10px 0;
+        font-family: 'Gill Sans', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #1C1C27;
+        text-align: left;
+        &>span{
+            font-size: 17px;
+            font-weight: 700;
+        }
+    }
+    &__price{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFA542;
+        
+    }
+    &__btn{
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        background-color: #1C1C27;
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        padding:5px 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        border-bottom-right-radius: 30px;
+        cursor: pointer;
+        bottom: 20px;
+        right: 10px;
+        border: none;
+        &:active{
+            transform: translateY(2px);
+        }
+        &:hover svg>path{
+            fill: #FFA542;
+        }
+        &:hover{
+            color: #FFA542;
+        }
+    }
+   
+}

@@ -1,0 +1,170 @@
+.basket{
+    width: 1260px;
+    padding: 0 40px;
+    margin: 0 auto;
+    &>h2{
+        text-align: left;
+        color: #1C1C27;
+    }
+    &__empty{
+        text-align: center;
+        margin: 80px 0;
+        &__link{
+            text-decoration: none;
+            &>button{
+                color: white;      
+                background: #101010;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                width: 500px;
+                padding: 5px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                cursor: pointer;
+                &:hover{
+                    color: #FFA542;
+                
+                }
+            }
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;
+    }
+    .product{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        width: 650px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0;
+        margin-bottom: 20px;
+        &__about{
+            display: flex;
+            align-items: center;
+            &>img{
+                width: 136px;
+                height: 146px;
+            }
+            &>button{
+                background: none;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                &:active{
+                    transform: translateY(2px);
+                }
+            }
+        }
+        &__desc{
+            margin-top: 50px;
+            &>h3{
+                margin: 0;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 21px;
+                width: 300px;
+                color: #1C1C27;                
+            }
+            &>p{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                color: #AAAAAA;                
+            }
+          
+        }
+        &__quantity{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .quantity__btns{
+                width: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .plus__btn{
+                    background-color: #FFCE7F;
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                    border: none;
+                    color: white;
+                    font-size: 25px;
+                    cursor: pointer;
+                    &:active{
+                        // transform: translateY(2px);
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__summary{
+        width: 350px;
+        .subtotal{
+            width: 350px;
+            background: #ffffff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          &>div{
+            display: flex;
+            margin: 20px;
+            justify-content: space-between;
+          }
+            &>span{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+        .btn{
+            width: 350px;
+            font-size: 17px;
+            background: #101010;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            border: none;
+            cursor: pointer; 
+            &:hover{
+                color: black;
+                background-color: white;
+            }      
+            &:active{
+               box-shadow: none;
+            }             
+        }
+        .btn__style{
+            margin: 50px 0;
+            border: 1px solid #101010;
+            background-color: white;
+            color: #101010;
+        }
+        
+    }
+}
